@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+.brands-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.brand-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.brand-card:hover {
+    transform: scale(1.05);
+}
+.brand-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.brand-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.founder {
+    font-style: italic;
+    color: #555;
+}
+.contribution {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #777;
+}
+.history {
+    display: none;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #555;
+    text-align: left;
+}
+.history.active {
+    display: block;
+}

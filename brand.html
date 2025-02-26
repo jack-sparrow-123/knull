@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Driving Car Brands</title>
+<link rel="stylesheet" href="style3.css">
+
+</head>
+<body>
+    <h1>Self-Driving Car Brands</h1>
+    <div class="brands-container">
+        <!-- Tesla -->
+        <div class="brand-card" onclick="toggleHistory('tesla-history')">
+            <img src="C:\Users\user\OneDrive\Documents\projects\tesla logo.svg" alt="Tesla Logo" class="brand-logo">
+            <div class="brand-name">Tesla</div>
+            <div class="founder">Elon Musk</div>
+            <div class="contribution">
+                Tesla is a pioneer in electric vehicles and autonomous driving technology. Their Autopilot system is one of the most advanced self-driving systems available.
+            </div>
+            <div class="history" id="tesla-history">
+                <p><strong>History:</strong> Tesla, Inc. was founded in 2003 by Martin Eberhard and Marc Tarpenning. Elon Musk joined the company shortly thereafter and played a crucial role in its development. Tesla's mission is to accelerate the world's transition to sustainable energy. The company is known for its electric vehicles, energy storage systems, and solar products.</p>
+            </div>
+        </div>
+
+        <!-- Waymo -->
+        <div class="brand-card" onclick="toggleHistory('waymo-history')">
+            <img src="C:\Users\user\OneDrive\Documents\projects\waymo logo.png" alt="Waymo Logo" class="brand-logo">
+            <div class="brand-name">Waymo</div>
+            <div class="founder">Alphabet Inc. (Google)</div>
+            <div class="contribution">
+                Waymo, a subsidiary of Alphabet Inc., is a leader in autonomous driving technology. They have developed the Waymo Driver, a fully autonomous driving system.
+            </div>
+            <div class="history" id="waymo-history">
+                <p><strong>History:</strong> Waymo began as the Google Self-Driving Car Project in 2009. It became a standalone company under Alphabet Inc. in 2016. Waymo's mission is to make it safe and easy for people and things to move around. They have been testing autonomous vehicles extensively and launched a commercial ride-hailing service in Phoenix, Arizona.</p>
+            </div>
+        </div>
+
+        <!-- Cruise -->
+        <div class="brand-card" onclick="toggleHistory('cruise-history')">
+            <img src="C:\Users\user\OneDrive\Documents\projects\cruise logo.png" alt="Cruise Logo" class="brand-logo">
+            <div class="brand-name">Cruise</div>
+            <div class="founder">Kyle Vogt</div>
+            <div class="contribution">
+                Cruise, a subsidiary of General Motors, focuses on developing self-driving cars for urban environments. They aim to provide a fully autonomous ride-hailing service.
+            </div>
+            <div class="history" id="cruise-history">
+                <p><strong>History:</strong> Cruise Automation was founded in 2013 by Kyle Vogt and Dan Kan. The company was acquired by General Motors in 2016. Cruise is focused on developing autonomous vehicle technology and has been testing its self-driving cars in San Francisco. They aim to launch a commercial ride-hailing service using autonomous vehicles.</p>
+            </div>
+        </div>
+
+        <!-- Aurora -->
+        <div class="brand-card" onclick="toggleHistory('aurora-history')">
+            <img src="C:\Users\user\OneDrive\Documents\projects\aurora logo.png" alt="Aurora Logo" class="brand-logo">
+            <div class="brand-name">Aurora</div>
+            <div class="founder">Chris Urmson, Sterling Anderson, Drew Bagnell</div>
+            <div class="contribution">
+                Aurora is developing the Aurora Driver, a self-driving system that can be integrated into various vehicle types, including passenger cars and trucks.
+            </div>
+            <div class="history" id="aurora-history">
+                <p><strong>History:</strong> Aurora Innovation was founded in 2017 by Chris Urmson, Sterling Anderson, and Drew Bagnell. The company focuses on developing the Aurora Driver, a self-driving system that can be used in passenger cars, trucks, and other vehicles. Aurora has partnerships with several major automakers and is working towards deploying its technology commercially.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleHistory(id) {
+            const historyElement = document.getElementById(id);
+            historyElement.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
